@@ -1,0 +1,671 @@
+/* ==========================================================
+   ARCON SOFTWARE DEVELOPMENT
+   Corporate Web Interface
+   ========================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background:
+        radial-gradient(circle at 50% 15%, #09263a 0%, #03111d 35%, #01060c 75%);
+    color: #e8edf2;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+}
+
+
+/* ==========================================================
+   HEADER
+   ========================================================== */
+
+header {
+    min-height: 90px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 18px 7%;
+
+    background: rgba(2, 10, 18, 0.92);
+
+    border-bottom: 1px solid rgba(212, 175, 55, 0.35);
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    backdrop-filter: blur(15px);
+}
+
+header h2 {
+    color: #d4af37;
+    font-size: 28px;
+    letter-spacing: 6px;
+}
+
+header span {
+    color: #00d9ff;
+    font-size: 10px;
+    letter-spacing: 3px;
+}
+
+nav {
+    display: flex;
+    gap: 28px;
+}
+
+nav a {
+    color: #cbd5df;
+    text-decoration: none;
+
+    font-size: 13px;
+    letter-spacing: 1px;
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #00d9ff;
+}
+
+
+/* ==========================================================
+   PORTADA
+   ========================================================== */
+
+#inicio {
+    width: 100%;
+}
+
+#inicio > section:first-child {
+    min-height: 720px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 80px 20px;
+
+    position: relative;
+}
+
+
+/* ARO TECNOLÓGICO */
+
+#inicio > section:first-child::before {
+    content: "A";
+
+    width: 230px;
+    height: 230px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 35px;
+
+    border-radius: 50%;
+
+    border: 2px solid #d4af37;
+
+    color: #d4af37;
+
+    font-size: 110px;
+    font-weight: bold;
+
+    box-shadow:
+        0 0 25px rgba(212, 175, 55, 0.35),
+        0 0 60px rgba(0, 217, 255, 0.15),
+        inset 0 0 30px rgba(0, 217, 255, 0.12);
+}
+
+#inicio > section:first-child > p:first-of-type {
+    color: #00d9ff;
+
+    font-size: 12px;
+    letter-spacing: 6px;
+
+    margin-bottom: 20px;
+}
+
+h1 {
+    max-width: 950px;
+
+    color: white;
+
+    font-size: clamp(42px, 6vw, 80px);
+
+    line-height: 1;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 28px;
+}
+
+#inicio > section:first-child > p:nth-of-type(2) {
+    max-width: 720px;
+
+    color: #aab8c5;
+
+    font-size: 18px;
+    line-height: 1.8;
+
+    margin-bottom: 35px;
+}
+
+
+/* ==========================================================
+   BOTONES
+   ========================================================== */
+
+button {
+    min-width: 200px;
+
+    padding: 15px 25px;
+
+    margin: 7px;
+
+    border: 1px solid #d4af37;
+
+    background: rgba(212, 175, 55, 0.08);
+
+    color: #f0d77a;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #d4af37;
+    color: #05080c;
+
+    box-shadow: 0 0 25px rgba(212, 175, 55, 0.45);
+
+    transform: translateY(-3px);
+}
+
+
+/* ==========================================================
+   SECCIONES
+   ========================================================== */
+
+#servicios,
+#proyectos,
+#nosotros,
+#contacto {
+    padding: 100px 8%;
+}
+
+section > h2 {
+    color: #d4af37;
+
+    text-align: center;
+
+    font-size: 32px;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 50px;
+}
+
+
+/* ==========================================================
+   SERVICIOS
+   ========================================================== */
+
+#servicios {
+    background: rgba(0, 0, 0, 0.20);
+
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 22px;
+}
+
+#servicios h2 {
+    width: 100%;
+}
+
+#servicios article {
+    width: 300px;
+    min-height: 210px;
+
+    padding: 30px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(10, 31, 46, 0.85),
+            rgba(3, 12, 21, 0.95)
+        );
+
+    border: 1px solid rgba(0, 217, 255, 0.18);
+
+    border-radius: 8px;
+
+    transition: 0.35s;
+}
+
+#servicios article:hover {
+    transform: translateY(-8px);
+
+    border-color: #d4af37;
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.35),
+        0 0 20px rgba(0, 217, 255, 0.08);
+}
+
+#servicios h3 {
+    color: #00d9ff;
+
+    font-size: 18px;
+
+    margin-bottom: 18px;
+}
+
+#servicios article p {
+    color: #a9b7c5;
+
+    line-height: 1.7;
+
+    font-size: 14px;
+}
+
+
+/* ==========================================================
+   PROYECTOS
+   ========================================================== */
+
+#proyectos {
+    text-align: center;
+}
+
+#proyectos h3 {
+    color: #00d9ff;
+
+    font-size: 30px;
+
+    margin-bottom: 20px;
+}
+
+#proyectos p {
+    max-width: 750px;
+
+    margin: auto;
+
+    color: #aab8c5;
+
+    line-height: 1.8;
+}
+
+
+/* ==========================================================
+   NOSOTROS
+   ========================================================== */
+
+#nosotros {
+    text-align: center;
+
+    background: rgba(0, 0, 0, 0.18);
+}
+
+#nosotros p {
+    max-width: 760px;
+
+    margin: auto;
+
+    color: #aab8c5;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+}
+
+
+/* ==========================================================
+   CONTACTO
+   ========================================================== */
+
+#contacto {
+    text-align: center;
+}
+
+#contacto p {
+    color: #aab8c5;
+
+    font-size: 18px;
+
+    margin-bottom: 30px;
+}
+
+
+/* ==========================================================
+   FOOTER
+   ========================================================== */
+
+footer {
+    padding: 35px;
+
+    text-align: center;
+
+    background: #01050a;
+
+    border-top: 1px solid rgba(212, 175, 55, 0.25);
+
+    color: #687786;
+
+    font-size: 12px;
+
+    letter-spacing: 2px;
+}
+
+
+/* ==========================================================
+   CELULARES
+   ========================================================== */
+
+@media (max-width: 800px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+
+        gap: 15px;
+    }
+
+    #inicio > section:first-child::before {
+        width: 170px;
+        height: 170px;
+
+        font-size: 80px;
+    }
+
+    h1 {
+        font-size: 42px;
+    }
+
+    #servicios,
+    #proyectos,
+    #nosotros,
+    #contacto {
+        padding: 70px 20px;
+    }
+
+    #servicios article {
+        width: 100%;
+        max-width: 420px;
+    }
+}
+
+/* ==========================================================
+   FORMULARIO DE PROYECTOS
+   ========================================================== */
+
+#formProyecto {
+    width: 100%;
+    max-width: 900px;
+
+    margin: 45px auto 0;
+
+    padding: 40px;
+
+    text-align: left;
+
+    background: rgba(3, 15, 25, 0.85);
+
+    border: 1px solid rgba(0, 217, 255, 0.20);
+
+    border-radius: 12px;
+
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+}
+
+.form-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 20px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 22px;
+}
+
+.campo label {
+    color: #d4af37;
+
+    margin-bottom: 9px;
+
+    font-size: 13px;
+
+    letter-spacing: 1px;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+    width: 100%;
+
+    padding: 15px;
+
+    background: #06131e;
+
+    border: 1px solid #17364a;
+
+    border-radius: 5px;
+
+    color: white;
+
+    font-size: 15px;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+    border-color: #00d9ff;
+
+    box-shadow:
+        0 0 15px rgba(0, 217, 255, 0.12);
+}
+
+.campo textarea {
+    resize: vertical;
+}
+
+#mensajeFormulario {
+    margin-top: 20px;
+
+    color: #00d9ff;
+
+    text-align: center;
+}
+
+@media (max-width: 700px) {
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #formProyecto {
+        padding: 25px;
+    }
+}
+/* ==========================================================
+   ARCON SOFTWARE
+   PÁGINA DE CONFIRMACIÓN
+   ========================================================== */
+
+.pagina-gracias {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 30px;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #09263a 0%,
+            #03111d 40%,
+            #01060c 80%
+        );
+}
+
+.confirmacion-arcon {
+    width: 100%;
+    max-width: 750px;
+
+    padding: 60px 40px;
+
+    text-align: center;
+
+    background: rgba(3, 15, 25, 0.88);
+
+    border: 1px solid rgba(212, 175, 55, 0.35);
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 25px 80px rgba(0, 0, 0, 0.50),
+        0 0 40px rgba(0, 217, 255, 0.08);
+}
+
+.logo-confirmacion {
+    width: 110px;
+    height: 110px;
+
+    margin: 0 auto 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid #d4af37;
+    border-radius: 50%;
+
+    color: #d4af37;
+
+    font-size: 55px;
+    font-weight: bold;
+
+    box-shadow:
+        0 0 30px rgba(212, 175, 55, 0.25);
+}
+
+.corporation {
+    color: #00d9ff;
+
+    font-size: 11px;
+    letter-spacing: 5px;
+
+    margin-bottom: 20px;
+}
+
+.confirmacion-arcon h1 {
+    color: #ffffff;
+
+    font-size: clamp(32px, 6vw, 55px);
+
+    letter-spacing: 3px;
+
+    margin-bottom: 25px;
+}
+
+.check-arcon {
+    color: #00d9ff;
+
+    font-size: 55px;
+
+    margin-bottom: 25px;
+}
+
+.mensaje-confirmacion {
+    color: #d5dee6;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    margin-bottom: 15px;
+}
+
+.mensaje-confirmacion strong {
+    color: #d4af37;
+}
+
+.mensaje-secundario {
+    max-width: 600px;
+
+    margin: 0 auto 40px;
+
+    color: #8999a8;
+
+    line-height: 1.8;
+}
+
+.boton-arcon {
+    display: inline-block;
+
+    padding: 16px 30px;
+
+    border: 1px solid #d4af37;
+
+    color: #f0d77a;
+
+    text-decoration: none;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    transition: 0.3s;
+}
+
+.boton-arcon:hover {
+    background: #d4af37;
+
+    color: #05080c;
+
+    box-shadow:
+        0 0 25px rgba(212, 175, 55, 0.40);
+
+    transform: translateY(-3px);
+}

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ARCON Software Development</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js"></script>
+
+    <meta
+        name="description"
+        content="ARCON Software Development crea software personalizado, sistemas empresariales, automatización, bases de datos y soluciones de inteligencia artificial."
+    >
+</head>
+
+<body>
+
+    <!-- ==========================================
+         ARCON SOFTWARE DEVELOPMENT
+         ========================================== -->
+
+    <header>
+
+        <div>
+            <h2>ARCON</h2>
+            <span>SOFTWARE DEVELOPMENT</span>
+        </div>
+
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+
+    </header>
+
+
+    <!-- PORTADA -->
+
+    <main id="inicio">
+
+        <section>
+
+            <p>ARCON CORPORATION</p>
+
+            <h1>
+                SOFTWARE DISEÑADO
+                PARA TU NEGOCIO
+            </h1>
+
+            <p>
+                Creamos soluciones de software personalizadas
+                para empresas, emprendedores y profesionales.
+            </p>
+
+            <button>
+                SOLICITAR PROYECTO
+            </button>
+
+            <button>
+                VER SERVICIOS
+            </button>
+
+        </section>
+
+
+        <!-- SERVICIOS -->
+
+        <section id="servicios">
+
+            <h2>NUESTROS SERVICIOS</h2>
+
+            <article>
+                <h3>Software personalizado</h3>
+                <p>
+                    Sistemas desarrollados según las necesidades
+                    específicas de cada negocio.
+                </p>
+            </article>
+
+            <article>
+                <h3>Sistemas empresariales</h3>
+                <p>
+                    Gestión de clientes, citas, ventas,
+                    inventarios y operaciones.
+                </p>
+            </article>
+
+            <article>
+                <h3>Automatización</h3>
+                <p>
+                    Automatizamos procesos repetitivos para
+                    mejorar la productividad.
+                </p>
+            </article>
+
+            <article>
+                <h3>Inteligencia Artificial</h3>
+                <p>
+                    Integramos herramientas inteligentes
+                    dentro de soluciones empresariales.
+                </p>
+            </article>
+
+            <article>
+                <h3>Bases de datos</h3>
+                <p>
+                    Organización y administración segura
+                    de información empresarial.
+                </p>
+            </article>
+
+        </section>
+
+
+        <!-- PROYECTOS -->
+
+        <section id="proyectos">
+
+            <h2>PROYECTOS</h2>
+
+            <h3>ARCON 2.0</h3>
+
+            <p>
+                Plataforma tecnológica desarrollada para integrar
+                herramientas, información, automatización y
+                diferentes módulos empresariales.
+            </p>
+
+        </section>
+
+
+        <!-- NOSOTROS -->
+
+        <section id="nosotros">
+
+            <h2>ARCON SOFTWARE DEVELOPMENT</h2>
+
+            <p>
+                División tecnológica de ARCON CORPORATION
+                dedicada al desarrollo de soluciones digitales
+                personalizadas.
+            </p>
+
+        </section>
+
+
+        <!-- CONTACTO -->
+
+        <section id="contacto">
+
+    <h2>SOLICITAR PROYECTO</h2>
+
+    <p>
+        Cuéntanos qué software necesita tu negocio.
+        ARCON SOFTWARE DEVELOPMENT estudiará tu proyecto.
+    </p>
+
+<form
+    id="formProyecto"
+    action="https://formsubmit.co/maduroalcantaraempresasarcon@gmail.com"
+    method="POST"
+<input
+    type="hidden"
+    name="_subject"
+    value="Nueva solicitud - ARCON SOFTWARE DEVELOPMENT"
+>
+
+<input
+    type="hidden"
+    name="_template"
+    value="table"
+>
+
+<input
+    type="text"
+    name="_honey"
+    style="display:none"
+>
+<input
+    type="hidden"
+    name="_next"
+    value="http://localhost:8000/gracias.html"
+>
+
+        <div class="form-grid">
+
+            <div class="campo">
+                <label for="nombre">Nombre</label>
+                <input
+                    type="text"
+                    id="nombre"
+                    name="nombre"
+                    placeholder="Tu nombre"
+                    required
+                >
+            </div>
+
+            <div class="campo">
+                <label for="empresa">Empresa</label>
+                <input
+                    type="text"
+                    id="empresa"
+                    name="empresa"
+                    placeholder="Nombre de tu empresa"
+                >
+            </div>
+
+            <div class="campo">
+                <label for="correo">Correo electrónico</label>
+                <input
+                    type="email"
+                    id="correo"
+                    name="correo"
+                    placeholder="correo@ejemplo.com"
+                    required
+                >
+            </div>
+
+            <div class="campo">
+                <label for="telefono">Teléfono</label>
+                <input
+                    type="tel"
+                    id="telefono"
+                    name="telefono"
+                    placeholder="Número de contacto"
+                >
+            </div>
+
+        </div>
+
+        <div class="campo">
+
+            <label for="tipoSoftware">
+                Tipo de proyecto
+            </label>
+
+            <select id="tipoSoftware" name="tipoSoftware">
+
+                <option>Software personalizado</option>
+                <option>Sistema empresarial</option>
+                <option>Automatización</option>
+                <option>Base de datos</option>
+                <option>Inteligencia Artificial</option>
+                <option>Otro proyecto</option>
+
+            </select>
+
+        </div>
+
+        <div class="campo">
+
+            <label for="descripcion">
+                ¿Qué necesitas?
+            </label>
+
+            <textarea
+                id="descripcion"
+                name="descripcion"
+                rows="7"
+                placeholder="Explícanos la idea de tu proyecto..."
+                required
+            ></textarea>
+
+        </div>
+
+        <button type="submit">
+            ENVIAR SOLICITUD
+        </button>
+
+        <p id="mensajeFormulario"></p>
+
+    </form>
+
+</section>
+
+            <h2>¿TIENES UNA IDEA?</h2>
+
+            <p>
+                Cuéntanos qué sistema necesita tu negocio.
+            </p>
+
+            <button>
+                SOLICITAR SOFTWARE
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            © 2026 ARCON SOFTWARE DEVELOPMENT
+            — ARCON CORPORATION
+        </p>
+
+    </footer>
+
+</body>
+</html>
