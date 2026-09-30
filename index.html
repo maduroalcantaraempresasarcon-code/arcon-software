@@ -679,12 +679,56 @@
         <a href="#contacto">Contacto</a>
     </nav>
 
-    <a
-        class="primary-btn"
-        href="mailto:maduroalcantaraempresasarcon@gmail.com?subject=Solicitud%20de%20proyecto%20-%20ARCON%20Software"
+   <button
+    type="button"
+    class="primary-btn"
+    onclick="document.getElementById('form-proyecto').style.display='block'; this.style.display='none';"
+>
+    SOLICITAR PROYECTO
+</button>
+
+<div id="form-proyecto" style="display:none; margin-top:30px;">
+
+    <input
+        type="text"
+        id="nombre"
+        placeholder="Tu nombre"
+        required
     >
-        SOLICITAR PROYECTO
-    </a>
+
+    <input
+        type="email"
+        id="correo"
+        placeholder="Tu correo"
+        required
+    >
+
+    <input
+        type="tel"
+        id="telefono"
+        placeholder="Teléfono"
+    >
+
+    <select id="tipo-proyecto">
+        <option>Software personalizado</option>
+        <option>Sistema empresarial</option>
+        <option>Automatización</option>
+        <option>Solución tecnológica</option>
+        <option>Otro proyecto</option>
+    </select>
+
+    <textarea
+        id="mensaje"
+        placeholder="Cuéntanos qué software necesitas..."
+        rows="6"
+        required
+    ></textarea>
+
+    <button type="button" class="primary-btn">
+        ENVIAR SOLICITUD
+    </button>
+
+</div>
 
 </header>
 
