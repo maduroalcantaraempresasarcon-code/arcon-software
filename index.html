@@ -687,7 +687,7 @@
     SOLICITAR PROYECTO
 </button>
 
-<div id="form-proyecto" style="display:none; margin-top:30px;">
+ style="display:none; margin-top:30px;">
 
     <input
         type="text"
@@ -708,27 +708,6 @@
         id="telefono"
         placeholder="Teléfono"
     >
-
-    <select id="tipo-proyecto">
-        <option>Software personalizado</option>
-        <option>Sistema empresarial</option>
-        <option>Automatización</option>
-        <option>Solución tecnológica</option>
-        <option>Otro proyecto</option>
-    </select>
-
-    <textarea
-        id="mensaje"
-        placeholder="Cuéntanos qué software necesitas..."
-        rows="6"
-        required
-    ></textarea>
-
-    <button type="button" class="primary-btn">
-        ENVIAR SOLICITUD
-    </button>
-
-</div>
 
 </header>
 
@@ -918,12 +897,42 @@
                 una solución adaptada a tu proyecto.
             </p>
 
-            <a
+            <button
+                type="button"
                 class="primary-btn"
-                href="mailto:TU-CORREO-AQUI"
+                onclick="document.getElementById('form-proyecto').style.display='block'; this.style.display='none';"
+                this.style.display='none';"
             >
                 SOLICITAR PROYECTO
-            </a>
+            </button>
+
+            <div id="form-proyecto" style="display:none; margin-top:30px;">
+
+                <input type="text" id="nombre" placeholder="Tu nombre" required>
+
+                <input type="email" id="correo" placeholder="Tu correo" required>
+
+                <input type="tel" id="telefono" placeholder="Teléfono">
+
+                <select id="tipo-proyecto">
+                    <option value="">Selecciona el tipo de proyecto</option>
+                    <option>Software personalizado</option>
+                    <option>Sistema empresarial</option>
+                    <option>Automatización</option>
+                    <option>Solución tecnológica</option>
+                    <option>Otro proyecto</option>
+                </select>
+
+                <textarea
+                    id="mensaje"
+                    placeholder="Cuéntanos qué software necesitas..."
+                    rows="6"
+                    required
+                ></textarea>
+
+               <button type="button" class="primary-btn">
+                   ENVIAR SOLICITUD
+               </button>
 
         </div>
 
